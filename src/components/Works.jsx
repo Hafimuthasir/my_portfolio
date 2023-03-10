@@ -86,7 +86,7 @@ const Works = () => {
           and manage projects effectively. */}
 
           Eventhough these projects are small. These includes my latest works that showcases my latest
-          coding standard.Link to the code repositories have added in it.
+          coding standard. Link to the code repositories have added in it.
         </motion.p>
       </div>
 
