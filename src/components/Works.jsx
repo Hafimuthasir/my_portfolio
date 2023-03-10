@@ -1,7 +1,6 @@
 import React from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
@@ -110,20 +109,20 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          <span style={{fontSize:"1.5rem",fontWeight:"bold"}}>Brototype | May-2022</span> <br></br>
+          <span style={{fontSize:"inherit",fontWeight:"bold"}}>Brototype | May-2022</span> <br></br>
           &nbsp;Full Stack Development <br></br>
           <br></br>
 
-          <span style={{fontSize:"1.5rem",fontWeight:"bold"}}>University of Calicut | June 2019 - Mar-2022</span> <br></br>
+          <span style={{fontSize:"inherit",fontWeight:"bold"}}>University of Calicut | June 2019 - Mar-2022</span> <br></br>
           &nbsp;Bachelor Of Computer Applications <br></br>
           <br></br>
 
-          <span style={{fontSize:"1.5rem",fontWeight:"bold"}}>GHSS Pandikkad | Mar-2017-Mar-2019</span> <br></br>
+          <span style={{fontSize:"inherit",fontWeight:"bold"}}>GHSS Pandikkad | Mar-2017-Mar-2019</span> <br></br>
           &nbsp;Higher Secondary - Science <br></br>
           <br></br>
           
 
-          <span style={{fontSize:"1.5rem",fontWeight:"bold"}}> Pandallur Higher Secondary School | Apr-2017</span> <br></br>
+          <span style={{fontSize:"inherit",fontWeight:"bold"}}> Pandallur Higher Secondary School | Apr-2017</span> <br></br>
           &nbsp;Higher School 
 
         

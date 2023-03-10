@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+
+
+import ExpandCircleDownIcon from '@mui/icons-material/ExpandCircleDown';
+
 
 const Hero = () => {
   return (
@@ -24,7 +27,8 @@ const Hero = () => {
             and Full Stack web applications */}
             {/* I build fast, secure, and attractive Full-stack web applications. My focus is on delivering high-quality code that meets client 
            needs and providing an optimal user experience through intuitive design. */}
-           I build fast, secure and attractive Web applications with Python, Django and React.
+           {/* I build optimized, secure and attractive web applications using Python, Django and React. */}
+           I craft visually captivating and robust web applications that prioritize speed, security, and intuitive user experience using Python, Django and React.js.
           </p>
         </div>
       </div>
@@ -36,7 +40,7 @@ const Hero = () => {
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
               animate={{
-                y: [0, 24, 0],
+                y: [0, 20, 0],
               }}
               transition={{
                 duration: 1.5,
@@ -47,7 +51,7 @@ const Hero = () => {
               // className='w-3 h-3 rounded-full bg-secondary mb-1'
               className='transform rotate-180'
             >
-^
+<ExpandCircleDownIcon style={{ opacity: 10 }}/>
             </motion.div>
           </div>
         </a>

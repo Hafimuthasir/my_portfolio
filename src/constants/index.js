@@ -168,6 +168,7 @@ const experiences = [
     icon: "https://img.icons8.com/emoji/48/null/alien-emoji.png",
     iconBg: "#383E56",
     date: "March 2020 - April 2021",
+    source_code:"https://github.com/Hafimuthasir/Backend-ConnectX-.git",
     points: [
       "A Developers Community web application made completely responsive and covers all parts of social media.",
       "File uploading and downloading system - any file type can be attached with posts that can be easily downloaded by users from feed.",
@@ -203,6 +204,7 @@ const experiences = [
     icon: "https://img.icons8.com/fluency/48/null/wrench--v1.png",
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
+    source_code:"https://github.com/Hafimuthasir/groves2.git",
     points: [
       "A web application which provides all the important parts of E-Commerce",
        "Seperate fuctionality for Guest User including cart", "Coupons, Offers, Refferal, Wallet",
@@ -230,6 +232,7 @@ const experiences = [
     icon: "https://img.icons8.com/ios-glyphs/30/null/private-wall-mount-camera--v1.png",
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
+    source_code:"https://github.com/Hafimuthasir/Face-Mask-detection.git",
     points: [
       "A realtime Mask detecting AI app that detects people not wearing masks.",
       "Added a system ofremoving their attendance from the register.",
@@ -304,6 +307,35 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "Personal Portfolio",
+    description:
+      "The portfolio features an impressive design that highlights my expertise and abilities. ",
+    tags: [
+      {
+        name: "react.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "email.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "framer motion",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "material ui",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: carrent,
+    source_code_link: "https://github.com/Hafimuthasir/my_portfolio.git",
+  },
   {
     name: "School Portal",
     description:

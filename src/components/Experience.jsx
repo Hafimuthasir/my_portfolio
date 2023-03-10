@@ -11,6 +11,7 @@ import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
+import { github } from "../assets";
 
 // import { Modal, Typography, Box } from '@mui/material';
 
@@ -78,6 +79,20 @@ const ExperienceCard = ({ experience }) => {
       </button> */}
       <ModalExample button="Technologies Used" head="Technologies Used" points={experience.technologies}/>
       
+      <div className='absolute bottom-6 right-6'>
+      <div
+        onClick={() => window.open(experience.source_code, "_blank")}
+        className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+      >
+        <img
+          src={github}
+          alt='source code'
+          className='w-1/2 h-1/2 object-contain'
+        />
+      </div>
+    </div>
+
+
     </VerticalTimelineElement>
   );
 };
@@ -104,6 +119,8 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
+
+
     </>
   );
 };
