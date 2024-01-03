@@ -54,11 +54,11 @@ const About = () => {
         Three.js. I'm a quick learner and collaborate closely with clients to
         create efficient, scalable, and user-friendly solutions that solve
         real-world problems. Let's work together to bring your ideas to life! */}
-I' m a self taught full stack developer expertise in advanced web development. Proficient
-working in both frontend and backend. Have a track record of delivering excellent
-results under time constraints and an ability to adapt to new technologies quicker.
-I possess the ability to write code quick, secure, and in a way that is easily 
-understandable and maintainable.
+* Full-stack developer with skills encompassing the design, development, and deployment &nbsp;&nbsp;of  web applications across frontend, backend, and cloud environments.<br></br><br></br>
+* Crafted robust applications that are optimized for speed and security and structed for &nbsp;&nbsp;easily readable and maintainable.
+<br></br><br></br>
+* Leveraged various web servers, load balancers, load testing tools,  and AWS resources for
+&nbsp;&nbsp;DevOps at a professional level in both horizontal and vertical scaling strategies.
 
       </motion.p>
 
@@ -79,7 +79,7 @@ understandable and maintainable.
 
       <br></br>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Hands-On and Familiar with.</p>
+        <p className={styles.sectionSubText}>Hands-On and Good Knowledge.</p>
         <hr></hr>
         {/* <h2 className={styles.sectionHeadText}>Proficiency.</h2> */}
       </motion.div>

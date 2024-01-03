@@ -24,6 +24,10 @@ import {
   tripguide,
   threejs,
   drf,
+  redis,
+  nginx,
+  jmeter,
+  framermotion
 } from "../assets";
 
 export const navLinks = [
@@ -67,6 +71,10 @@ const technologies = [
     icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
   },
   {
+    name: "JavaScript",
+    icon: javascript,
+  },
+  {
     name:"Django",
     icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" 
   },
@@ -102,35 +110,48 @@ const technologies = [
     name:"Material UI",
     icon:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg"
   },
-
-];
-
-const familiar = [
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
   {
     name: "Tailwind CSS",
     icon: tailwind,
-  },
-
-  {
-    name: "MongoDB",
-    icon: mongodb,
   },
   {
     name: "git",
     icon: git,
   },
   {
+    name:"JWT",
+    icon:"https://img.icons8.com/color-pixels/32/null/experimental-lock-color-pixels.png"
+  },
+  {
+    name:"AWS",
+    icon:"https://img.icons8.com/color/48/null/amazon-web-services.png"
+  },
+  {
+    name:"NGINX",
+    icon:nginx
+  },
+  {
+    name:"Apache Jmeter",
+    icon:jmeter
+  }
+
+];
+
+const familiar = [
+  {
+    name: "React Native",
+    icon: reactjs,
+  },
+  {
+    name: "MongoDB",
+    icon: mongodb,
+  },
+  
+  {
     name: "figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  
   {
     name:"Micro services",
     icon:"https://img.icons8.com/external-soft-fill-juicy-fish/60/null/external-microservice-microservices-soft-fill-soft-fill-juicy-fish.png"
@@ -147,18 +168,20 @@ const familiar = [
     name:"Web Socket",
     icon:"https://img.icons8.com/ios-filled/50/null/plug-1.png"
   },
-  {
-    name:"JWT",
-    icon:"https://img.icons8.com/color-pixels/32/null/experimental-lock-color-pixels.png"
-  },
+ 
   {
     name:"Celery",
     icon:"https://img.icons8.com/fluency/48/null/celery.png"
   },
   {
-    name:"AWS",
-    icon:"https://img.icons8.com/color/48/null/amazon-web-services.png"
+    name: "Redis",
+    icon: redis,
+  },
+  {
+    name: "Framer Motio",
+    icon: framermotion,
   }
+  
 ]
 
 const experiences = [
@@ -281,27 +304,50 @@ const experiences = [
 
 const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
+    testimonial:[
+    'Led the strategic planning, development, deployment, and ongoing maintenance of fuel management, diesel delivery and related web and mobile applications.',
+    'Optimized pre-existing applications by efficiently utilizing cloud resources at optimal scaling levels, employing advanced caching techniques, code minification and compresssion, same time reducing server maintainance costs.',
+    'Achieved more than 3x performance improvement while halving server costs.',
+    'Successfully connected the system with IoT using micro controllers for seamless data integration.',
+    'Tailored and implemented additional features to cater to the unique requirements of diverse clients.',
+    'Implemented functionalities such as online delivery, live fuel level monitoring, location based asset tracking, a comprehensive billing and invoicing system, live chat support and more.',
+    'Engineered an advanced asset management system with detailed histories for efficient tracking and analysis',
+    'Introduced a distinction between Prime and Non-Prime features to offer tailored solutions to different user segments.'
+    ],
+      // "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+  //  "Led the strategic planning, development, deployment, and ongoing maintenance of fuel management, diesel delivery and related web and mobile applications. Successfully connected the system with IoT using microcontrollers for seamless data integration.Tailored and implemented additional features to cater to the unique requirements of diverse clients.Implemented functionalities such as online delivery, live fuel level monitoring, locationbased asset tracking, a comprehensive billing and invoicing system, live chat support and more.Engineered an advanced asset management system with detailed histories for efficient tracking and analysis. Introduced a distinction between Prime and Non-Prime features to offer tailored solutions to different user segments.",
+      name: "Romulus Oil and Gas",
+    designation: "Full Stack Engineer",
+    company: "DEC 2022 - Present",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
+      // "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      [
+        "Mastered core Python, making the backend robust and efficient.",
+        "Developed advanced web applications using JavaScript and React for a dynamic user interface.",
+        "Crafted diverse applications, including social media, e-commerce, and management tools.",
+        "Implemented features like Live chat, OTP Verification, Payment systems, Guest cart, Coupons, Offers, Referral, Wallet, Invoice, Return, and entire Admin side managements, etc.",
+        "Integrated various APIs and libraries, such as Payment gateways, OAuth providers, UI Libraries, and Testing Frameworks.",
+        "Demonstrated expertise in core data structures for efficient problem-solving.",
+      ],
+      name: "Brototype",
+    designation: "Full Stack developer",
+    company: "April 2022 - DEC 2022",
     image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
+      // "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      [
+        "Successfully delivered several static and management web applications.",
+        "Played a key role in the development of management websites, gaining valuable insights into backend technologies and database management.",
+        "Engaged in continuous learning, leveraging the guidance of senior developers to enhance my skills and adapt to evolving industry standards.",
+      ],
+      name: "ThunderCam Solutions",
+    designation: "Web Developer",
+    company: "NOV 2021-APRIL 2022",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
@@ -361,29 +407,29 @@ const projects = [
     image: carrent,
     source_code_link: "https://github.com/Hafimuthasir/School-Portal-Assignment.git",
   },
+  // {
+  //   name: "Olx Clone",
+  //   description:
+  //     "Web application that build for deep understanding of React.js",
+  //   tags: [
+  //     {
+  //       name: "reactjs",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "firebase",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: jobit,
+  //   source_code_link: "https://github.com/Hafimuthasir/Olx-Clone.git",
+  // },
   {
-    name: "Olx Clone",
-    description:
-      "Web application that build for deep understanding of React.js",
-    tags: [
-      {
-        name: "reactjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "firebase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/Hafimuthasir/Olx-Clone.git",
-  },
-  {
-    name: "Netflix Clone",
+    name: "AI OCR Reader",
     description:
       "Web application that build for deep understanding of React.js",
     tags: [

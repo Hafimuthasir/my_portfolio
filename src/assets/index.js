@@ -20,6 +20,10 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import drf from "./tech/drf.png";
+import redis from "./tech/redis.png"
+import jmeter from "./tech/jmeter.png"
+import nginx from "./tech/nginx.svg"
+import framermotion from "./tech/framer-motion.svg"
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -29,6 +33,7 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+
 
 export {
   logo,
@@ -60,4 +65,8 @@ export {
   jobit,
   tripguide,
   drf,
+  redis,
+  jmeter,
+  nginx,
+  framermotion
 };

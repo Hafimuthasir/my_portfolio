@@ -69,8 +69,8 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>More work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Mini Projects.</h2>
+        <p className={`${styles.sectionSubText} `}>Further minor initiatives from the past.</p>
+        {/* <h2 className={`${styles.sectionHeadText}`}>Mini Projects.</h2> */}
       </motion.div>
 
       <div className='w-full flex'>
@@ -84,8 +84,8 @@ const Works = () => {
           ability to solve complex problems, work with different technologies,
           and manage projects effectively. */}
 
-          Eventhough these projects are small. These includes my latest works that showcases my latest
-          coding standard. Link to the code repositories have added in it.
+          {/* Eventhough these projects are small. These includes my latest works that showcases my latest
+          coding standard. Link to the code repositories have added in it. */}
         </motion.p>
       </div>
 
@@ -109,9 +109,9 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          <span style={{fontSize:"inherit",fontWeight:"bold"}}>Brototype | May-2022</span> <br></br>
+          {/* <span style={{fontSize:"inherit",fontWeight:"bold"}}>Brototype |  June 2021 - Nov 2021 </span> <br></br>
           &nbsp;Full Stack Development <br></br>
-          <br></br>
+          <br></br> */}
 
           <span style={{fontSize:"inherit",fontWeight:"bold"}}>University of Calicut | June 2019 - Mar-2022</span> <br></br>
           &nbsp;Bachelor Of Computer Applications <br></br>
@@ -122,8 +122,8 @@ const Works = () => {
           <br></br>
           
 
-          <span style={{fontSize:"inherit",fontWeight:"bold"}}> Pandallur Higher Secondary School | Apr-2017</span> <br></br>
-          &nbsp;Higher School 
+          {/* <span style={{fontSize:"inherit",fontWeight:"bold"}}> Pandallur Higher Secondary School | Apr-2017</span> <br></br>
+          &nbsp;Higher School  */}
 
         
         </motion.p>

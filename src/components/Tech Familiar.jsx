@@ -5,7 +5,6 @@ import { technologies } from "../constants";
 import { familiar } from "../constants";
 
 const Tech = (props) => {
-  console.log('11111',props.sect);
   return (
 <div className="flex flex-wrap justify-center gap-6 sm:gap-10">
   {

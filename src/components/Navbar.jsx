@@ -58,7 +58,9 @@ const Navbar = () => {
       <ArticleIcon sx={{ fontSize: "inherit" }} /> Resume
         </Button> */}
 <div>
-<a href="https://drive.google.com/file/d/1rYVzdRomQKNVgv4PCZtrN0_IxR1_9-3y/view?usp=share_link" download target="_blank">
+{/* <a href="https://drive.google.com/file/d/1rYVzdRomQKNVgv4PCZtrN0_IxR1_9-3y/view?usp=share_link" download target="_blank"> */}
+<a href="https://drive.google.com/file/d/15XTYbJM71ieNHKDSsppD308c2qYmtUf2/view?usp=drive_link" download target="_blank">
+
   <Button
     sx={{ fontFamily: "inherit", textTransform: "none"}}
     variant="contained"
